@@ -159,13 +159,13 @@ DCGAN with another generator - Mini Batch
 - cuda : if you want run it gpu
 
 ## Reference
-[1) LSTM Architecture image : http://colah.github.io/posts/2015-08-Understanding-LSTMs/ (2018.11.01) ](img_lstm)  
-[2) Tchaikovsky faces : http://witsens.tistory.com/74 (2018.11.01) ](img_composer)  
-[3) Bedroom in Arles : https://pt.wikipedia.org/wiki/Ficheiro:Vincent\_Willem\_van\_Gogh\_135.jpg (2018.11.01) ](img_vangogh)  
-[4) DCGAN Architecture image : https://arxiv.org/abs/1607.07539 ](img_dcganModel)  
-[5) VAE model image : https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html (2018.11.01) ](img_vaeModel)  
-[6) GAN model image : https://towardsdatascience.com/understanding-generative-adversarial-networks-4dafc963f2ef (2018.11.01) ](img_ganModel)  
-[7) DCGAN Architecture image : https://arxiv.org/abs/1607.07539 ](img_dcganModel)
+1) LSTM Architecture image : [img_lstm](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) (2018.11.01)
+2) Tchaikovsky faces : [img_composer](http://witsens.tistory.com/74) (2018.11.01)
+3) Bedroom in Arles : [img_vangogh](https://pt.wikipedia.org/wiki/Ficheiro:Vincent\_Willem\_van\_Gogh\_135.jpg) (2018.11.01)
+4) DCGAN Architecture image : [img_dcganModel](https://arxiv.org/abs/1607.07539)
+5) VAE model image : [img_vaeModel](https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html) (2018.11.01)
+6) GAN model image : [img_ganModel](https://towardsdatascience.com/understanding-generative-adversarial-networks-4dafc963f2ef) (2018.11.01)
+7) DCGAN Architecture image : [img_dcganModel](https://arxiv.org/abs/1607.07539)
 
 ## Special thanks to
 Beck sun woo for translation.
