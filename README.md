@@ -70,10 +70,11 @@ The first AI-generated model I've used is VAE. Unfortunately, however, VAE was n
 1 data overfitting - reconstruction Turn down the sound before listening to the music. It can be very loud.    
 [Audio](https://github.com/kok202/ApolloGAN/blob/master/README_resources/audio/history/VAE1-ReconstructionWave0.mp3?raw=true)
 
-### Second try - FFT 
+### Second try - FFT + GAN
 
 After failure of VAE trial, I contemplated how to use the train data for my model efficiently. And following my professor's advice, I thought the Fourier transform has a potential to solve my problem. The Fourier transform was effective at representing wave and had the ability to compress the wave files. So I decided to use Fourier transform for training data. And while trying to implement the Fourier transformations, another possible application of this model occurred to me. The value of converting the wave file using Fourier's method is represented by the substitution of three values with a real value, a false value, and a frequency value. So if I changed the one-dimensional wave sequence into two dimension, then the data can be expressed in three-dimension. It means that Fourier transformation makes it much easier for computer to deal with the wave file as an three dimensional image. (real value, false value, frequency value in Fourier transformation -> RGB values in image) And if I could represent music file as image file, I thought it would be possible to use the GAN model which has been extensively researched for image generation. Thus, I decided to apply DCGAN model to this AI project.
 
+#### Plan
  1) Wave file to Fourier transformation  
 <img src="https://github.com/kok202/ApolloGAN/blob/master/README_resources/history/fft_01wave.png?raw=true" width="45%" /> <img src="https://github.com/kok202/ApolloGAN/blob/master/README_resources/history/fft_02fft.png?raw=true" width="45%" />
 
@@ -86,7 +87,7 @@ After failure of VAE trial, I contemplated how to use the train data for my mode
 4) Below is the target data in AI model  
 <img src="https://github.com/kok202/ApolloGAN/blob/master/README_resources/history/mytarget_0.png?raw=true" /> <img src="https://github.com/kok202/ApolloGAN/blob/master/README_resources/history/mytarget_1.png?raw=true" /> <img src="https://github.com/kok202/ApolloGAN/blob/master/README_resources/history/mytarget_2.png?raw=true" /> <img src="https://github.com/kok202/ApolloGAN/blob/master/README_resources/history/mytarget_3.png?raw=true" />
 
-### Third try - GAN
+### GAN
 
 <img src="https://github.com/kok202/ApolloGAN/blob/master/README_resources/history/gan-model.png?raw=true" width="80%" />
 
@@ -108,7 +109,6 @@ Current project While I tested the model, I suddenly started to question the val
 <img src="https://github.com/kok202/ApolloGAN/blob/master/README_resources/history/fft_reassemble.png?raw=true" />
 2) Result : Overfitting  
 <img src="https://github.com/kok202/ApolloGAN/blob/master/README_resources/history/gan_overfitting.png?raw=true" />
-
 
 # Good result
 
@@ -167,5 +167,10 @@ DCGAN with another generator - Mini Batch
 6) GAN model image : [img_ganModel](https://towardsdatascience.com/understanding-generative-adversarial-networks-4dafc963f2ef) (2018.11.01)
 7) DCGAN Architecture image : [img_dcganModel](https://arxiv.org/abs/1607.07539)
 
+
 ## Special thanks to
 Beck sun woo for translation.
+
+
+## Commentary
+I also tried combination FFT and VAE but it was not work. If I can afford time, I will register research documents about it.
